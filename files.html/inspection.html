@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jojo Homes</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-primary bg-white fixed-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="/files.html/Jojohomes.html"><img src="/Images/Jossy.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-bold mx-3 border bg-light" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold mx-3 border bg-light" href="/files.html/more.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold mx-3 border bg-light" href="#our-services">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold mx-3 border bg-light" href="">Listing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold mx-3 border bg-light" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold active text-success mx-3 border bg-light" href="Inspection">Inspection</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero section-->
+      <div class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="container hero-content">
+            <h1 class="display-4 fw-bold mb-5">Inspection is free</h1>
+        </div>
+    </div> 
+
+    <!--Inspection details-->
+    <div class="container-fluid bg-white text-start">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1 class="fs-4 fw-bold mx-5 mt-5">Site Inspection</h1>
+                <h2 class="fs-4 fw-bold text-success mx-5">Tuesdays and Saturdays</h2>
+            </div>
+
+                <div class="col-md-2 mt-5 mx-5">
+                    <img src="/Images/Jossy.png" alt="" width="100">
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-white">
+        <div class="row">
+            <div class="col-sm-4 mt-3 mx-5">
+                <h3 class="text-danger fs-5">Destination</h3>
+                <h4 class="border bg-light p-2 fs-2 fw-bold">ENEKA</h4>
+            </div>
+
+            <div class="col-md-2 mx-5 mt-3 py-4">
+                <span class="fw-bold">9am</span><br>
+                <span>Prompt</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-white">
+        <div class="row mx-5">
+            <h1 class="mt-5 text-success fs-6">CALL TO BOOK</h1>
+            <h2 class="fs-3">08023763908</h2>
+        </div>
+    </div>
+    
+
+    <!--Form-->
+    <div class="container-fluid bg-white">
+        <div class="row mx-5">
+            <h1 class="mt-5 pt-5 text-success">Kindly fill out this form</h1>
+            <form action="" class="was-validated">
+                <div class="mb-3 mt-3">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Your Full Name" name="name" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <div class="mb-3">
+                <label for="name">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Your Email Address" name="name" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <div class="mb-3" id="myphone">
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="category">Estate you want to inspect</label><br>
+                    <select name="category" id="category">
+                        <option value="disabled selected">--Select--</option>
+                        <option value="gra">GRA</option>
+                        <option value="odili">Odili</option>
+                        <option value="eneka">Eneka</option>
+                        <option value="sars road">Sars Road</option>
+                        <option value="woji">Woji</option>
+                    </select>
+                </div>
+
+                <div class="mb-3" id="dates">
+                    <label for="date">Preferred day for inspection</label><br>
+                    <input type="date" class="date" id="date" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please choose a date.</div>
+                </div>
+
+                <div class="mb-3" id="question">
+                    <label for="text">Are you coming with anyone?</label><br>
+                    <input type="text" id="text" name="text" placeholder="How many persons are you coming with?" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="category">Describe yourself</label><br>
+                    <select name="category" id="category">
+                        <option value="disabled selected">--Select--</option>
+                        <option value="male">Realtor</option>
+                        <option value="female">Client</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <footer class="bg-dark text-white pt-5 mt-5">
+        <div class="container">
+          <div class="row fs-6">
+            <!-- Footer Column 1: Company Information -->
+            <div class="col-md-4">
+              <h5 class="text-success">About Our Company</h5>
+              <p class="text-secondary">
+                We are a leading real estate company in Port-Harcourt, offering personalized services to help you find your dream home. From buying to selling, we make the process seamless and easy.
+              </p>
+            </div>
+      
+            <!-- Footer Column 2: Quick Links -->
+            <div class="col-md-2">
+              <h5 class="text-success">Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="/index.html" class="text-secondary text-decoration-none">Home</a></li>
+                <li><a href="/files.html/more.html" class="text-secondary text-decoration-none">About Us</a></li>
+                <li><a href="/files.html/Listing.html" class="text-secondary text-decoration-none">Properties</a></li>
+                <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+              </ul>
+            </div>
+      
+            <!-- Footer Column 3: Services -->
+            <div class="col-md-2" id="our-services">
+              <h5 class="text-success">Our Services</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-secondary text-decoration-none">Buy a Property</a></li>
+                <li><a href="#" class="text-secondary text-decoration-none">Sell a Property</a></li>
+                <li><a href="#" class="text-secondary text-decoration-none">Rent a Property</a></li>
+                <li><a href="/files.html/property-management.html" class="text-secondary text-decoration-none">Property Management</a></li>
+              </ul>
+            </div>
+      
+            <!-- Footer Column 4: Contact Info -->
+            <div class="col-md-4">
+              <h5 class="text-success">Contact Us</h5>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-geo-alt text-secondary"></i> 123 Rumukhurushi Junction, Port-Harcourt</li>
+                <li><i class="bi bi-telephone text-secondary"></i> +123 456 7890</li>
+                <li><i class="bi bi-envelope text-secondary"></i> info@jojohomes.com</li>
+              </ul>
+      
+              <!-- Social Media Links -->
+              <div class="mt-3">
+                <a href="#" class="text-secondary me-3"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-secondary me-3"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-secondary me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-secondary me-3"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Footer Bottom Section -->
+        <div class="bg-secondary text-center py-3 mt-4">
+          <p class="mb-0">&copy; 2024 Real Estate Company. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+  <!-- Bootstrap Icons (Optional for Social Media) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
